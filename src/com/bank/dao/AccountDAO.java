@@ -8,7 +8,7 @@ import com.bank.exception.InsufficientBalanceException;
 
 public class AccountDAO {
 
-    // 💰 Deposit
+    //  Deposit
     public void deposit(int accNo, double amount) throws Exception {
 
         Connection con = DBConnection.getConnection();
@@ -28,7 +28,7 @@ public class AccountDAO {
     }
 
 
-    // 💸 Withdraw
+    //  Withdraw
     public void withdraw(int accNo, double amount) throws Exception {
 
         Connection con = DBConnection.getConnection();
@@ -83,7 +83,7 @@ public class AccountDAO {
         throw new RuntimeException("Account not found");
     }
 
-    // 🧾 Transaction Logger
+    // Transaction Logger
     private void saveTransaction(Connection con, int accNo, String type, double amount) throws Exception {
 
         PreparedStatement ps = con.prepareStatement(
