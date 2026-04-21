@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="java_banking_software:war exploded">
+    <output-path>$PROJECT_DIR$/web/WEB-INF</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="java_banking_software" />
+        </element>
+        <element id="library" level="project" name="mysql-connector-j-9.6.0" />
+      </element>
+      <element id="javaee-facet-resources" facet="java_banking_software/web/Web" />
+      <element id="module-output" name="java_banking_software" />
+    </root>
+  </artifact>
+</component>
